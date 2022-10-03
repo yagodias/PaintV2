@@ -42,6 +42,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.Black;
             this.groupBox1.Controls.Add(this.buttonSave);
             this.groupBox1.Controls.Add(this.buttonClean);
@@ -70,6 +72,7 @@
             this.buttonSave.TabIndex = 6;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = false;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // buttonClean
             // 
@@ -94,6 +97,7 @@
             this.buttonEraser.Text = "Eraser";
             this.buttonEraser.UseVisualStyleBackColor = false;
             this.buttonEraser.Click += new System.EventHandler(this.buttonEraser_Click);
+            this.buttonEraser.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonEraser_MouseDown);
             // 
             // label2
             // 
@@ -111,6 +115,7 @@
             this.comboBoxThicknessPen.Name = "comboBoxThicknessPen";
             this.comboBoxThicknessPen.Size = new System.Drawing.Size(102, 26);
             this.comboBoxThicknessPen.TabIndex = 2;
+            this.comboBoxThicknessPen.SelectedIndexChanged += new System.EventHandler(this.comboBoxThicknessPen_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -146,6 +151,7 @@
             this.panelPaint.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelPaint_MouseDown);
             this.panelPaint.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelPaint_MouseMove);
             this.panelPaint.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelPaint_MouseUp);
+            this.panelPaint.Resize += new System.EventHandler(this.panelPaint_Resize);
             // 
             // FormPrincipal
             // 
